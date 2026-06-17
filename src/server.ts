@@ -2,7 +2,6 @@ import express, { Request, Response } from 'express';
 import { timeStamp } from 'node:console';
 import { User } from './user';
 
-
 const app = express();
 const PORT = 3000;
 
@@ -29,5 +28,5 @@ app.get('/users', (req: Request, res: Response) => {
 })
 
 app.listen(PORT, () => {
-  console.log(`Servidor rodando em http://localhost:${PORT}`);
+  console.log(`Servidor rodando em http://localhost:${PORT}`)
 })
